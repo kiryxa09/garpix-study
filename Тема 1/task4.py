@@ -2,10 +2,7 @@ a = "a"
 b = "b"
 c = "c"
 
-temp = a
-a = b
-b = c
-c = temp
+a, b, c = b, c, a
 
 print(f"a: {a}")
 print(f"b: {b}")
