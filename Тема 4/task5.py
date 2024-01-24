@@ -1,19 +1,19 @@
 lst1 = ['Иваново', 'Санкт-Петербург', 'Москва', 'Казань', 'Новосибирск', 'Воронеж']
 lst2 = ['Воронеж', 'Санкт-Петербург', 'Иваново', 'Волгоград']
 
-matchList = []
-missList = []
+match_list = []
+miss_list = []
 
 for i in lst1:
   if i in lst2:
-    matchList.append(i)
+    match_list.append(i)
   elif i not in lst2:
-    missList.append(i)
+    miss_list.append(i)
 
 for j in lst2:
   if j not in lst1:
-    missList.append(j)
+    miss_list.append(j)
 
 
-print(matchList)
-print(missList)
+print(match_list)
+print(miss_list)

@@ -1,6 +1,7 @@
-list1 = [5, 10, 15, 20, 25, 50]
+list1 = [5, 10, 15, 20, 20, 50]
 
-while list1.count(20) > 0:
-  list1.remove(20)
+for i in range(len(list1)):
+  if list1[i] == 20:
+    list1[i] = 200
 
 print(list1)
