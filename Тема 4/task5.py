@@ -17,3 +17,8 @@ for j in lst2:
 
 print(match_list)
 print(miss_list)
+
+match_set = set(lst1) & set(lst2)
+miss_set = (set(lst1) - set(lst2)) | (set(lst2) - set(lst1))
+print(match_set)
+print(miss_set)
